@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import print_alpha
-print("Z")
+import string
+print(string.ascii_uppercase)
