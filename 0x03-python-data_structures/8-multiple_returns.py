@@ -5,5 +5,5 @@ def multiple_returns(sentence):
         char = None
     else:
         for char in sentence:
-             return leng, char
+            return leng, char
     return leng, char
