@@ -3,12 +3,28 @@ def add_tuple(tuple_a=(), tuple_b=()):
     len_a = len(tuple_a)
     len_b = len(tuple_b)
     if len_a <= 0:
-        tuple_a[0] = 0
+        a0 = 0
+    else:
+        a0 = tuple_a[0]
     if len_b <= 0:
-        tuple_b[0] = 0
+        b0 = 0
+    else:
+        b0 = tuple_b[0]
     if len_a <= 1:
-        tuple_a[1] = 0
+        a1 = 0
+    else:
+        a1 = tuple_a[1]
     if len_b <= 1:
-        tuple_b[1] = 0
-    summ = ((tuple_a[0] + tuple_b[0]), (tuple_a[1] + tuple_b[1]))
+        b1 = 0
+    else:
+        b1 = tuple_b[1]
+    summ = ((a0 + b0), (a1 + b1))
     return summ
+
+tuple_a = (1, 89)
+tuple_b = (88, 11)
+new_tuple = add_tuple(tuple_a, tuple_b)
+print(new_tuple)
+
+print(add_tuple(tuple_a, (1, )))
+print(add_tuple(tuple_a, ()))
