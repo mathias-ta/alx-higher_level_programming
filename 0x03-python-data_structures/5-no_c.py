@@ -7,5 +7,3 @@ def no_c(my_string):
             char = ""
         charr = charr + char
     return charr
-
-print(no_c("Holberton School"))
