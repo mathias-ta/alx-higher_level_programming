@@ -7,7 +7,7 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *tmp = *head;
+	listint_t *temp = *head;
 	unsigned int size = 0, i = 0;
 	int data[10240];
 
@@ -19,17 +19,17 @@ int is_palindrome(listint_t **head)
 
 	while (tmp) /* find size of linked list */
 	{
-		tmp = tmp->next;
+		temp = temp->next;
 		size += 1;
 	}
 	if (size == 1) /* single node list is palindrome */
 		return (1);
 
-	tmp = *head;
-	while (tmp) /* pull node data into array to compare */
+	temp = *head;
+	while (temp) /* pull node data into array to compare */
 	{
-		data[i++] = tmp->n;
-		tmp = tmp->next;
+		data[i++] = temp->n;
+		temp->next;
 	}
 
 	for (i = 0; i <= (size/2); i++)
