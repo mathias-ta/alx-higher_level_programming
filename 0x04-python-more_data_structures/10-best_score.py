@@ -6,3 +6,4 @@ def best_score(a_dictionary):
             if value >= highest_value:
                 highest_value = value
         return key
+    return None
