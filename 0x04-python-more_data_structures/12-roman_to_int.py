@@ -4,6 +4,10 @@ def roman_to_int(roman_string):
     c_num = 0
     p_num = 0
     t_int = 0
+    if roman_string is None or type(roman_string) is not str:
+        return 0
+    if roman_string == "":
+        return 0
     if rom_str is not None:
         for char in rom_str:
             if ord(char) == ord("I"):
