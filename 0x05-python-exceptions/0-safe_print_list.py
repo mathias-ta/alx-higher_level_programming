@@ -6,6 +6,6 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[i]), end="")
         except IndexError:
             break
-        i += 1 
+        i += 1
     print("")
     return i
