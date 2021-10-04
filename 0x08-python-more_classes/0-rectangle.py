@@ -4,6 +4,6 @@ defining an empty class
 """
 
 
-class Rectangle:
+class Rectangle():
     # empty class
     pass
