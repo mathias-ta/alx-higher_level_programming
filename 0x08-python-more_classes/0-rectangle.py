@@ -3,6 +3,7 @@
 defining an empty class
 """
 
+
 class Rectangle:
-    #empty class
+    # empty class
     pass
