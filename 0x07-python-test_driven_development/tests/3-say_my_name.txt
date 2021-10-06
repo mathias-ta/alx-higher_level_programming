@@ -5,17 +5,17 @@ First import method to test
 
 SUCCESS CASES:
 
-Test for two strings given:
+Test two strings given:
      >>> say_my_name("Mathias", "Bekele")
      My name is Mathias Bekele
 
-Test for one string arg given:
+Test one string arg given:
      >>> say_my_name("Mathias")
      My name is Mathias
 
 FAIL CASES:
 
-Test for other data types:
+Test other data types:
      >>> say_my_name(78, "Bekele")
      Traceback (most recent call last):
      ...
@@ -26,13 +26,13 @@ Test for other data types:
      ...
      TypeError: last_name must be a string
 
-Test for extra args:
+Test extra args:
      >>> say_my_name("Mathias", "Tadesse", "Bekele")
      Traceback (most recent call last):
      ...
      TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
 
-Test for few args
+Test few args
      >>> say_my_name()
      Traceback (most recent call last):
      ...
