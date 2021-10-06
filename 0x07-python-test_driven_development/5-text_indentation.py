@@ -24,8 +24,11 @@ def text_indentation(text):
                     print(char)
                     print("")
             else:
+                ch_char = "a"
                 print("")
+                print("")
+                print(char, end="")
         else:
             ch_char = "a"
             print(char, end="")
-# text_indentation("Holberton. School? How are you: John")
+# text_indentation("Holberton.School? How are you: John")
