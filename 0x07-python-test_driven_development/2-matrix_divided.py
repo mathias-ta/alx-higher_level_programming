@@ -28,3 +28,12 @@ def matrix_divided(matrix, div):
             k.append(round(j / div, 2))
         new_matrix.append(k)
     return new_matrix
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+try:
+    print(matrix_divided(matrix, 0))
+except Exception as e:
+    print(e)
+print(matrix)
