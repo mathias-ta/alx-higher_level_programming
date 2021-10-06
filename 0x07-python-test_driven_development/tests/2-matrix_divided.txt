@@ -16,6 +16,10 @@ For signed and unsigned ints and floats:
      >>> print(matrix_divided(matrix, True))
      [[1.0], [0.0]]
 
+     >>> matrix = [[1, 2, 3], [4, 5, 6.7]]
+     >>> print(matrix_divided(matrix, float("inf")))
+     [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
 FAIL CASES:
 
 For empty matrix:

@@ -5,6 +5,9 @@ Divide each elements of a matrix
 
 
 def matrix_divided(matrix, div):
+    """
+    Returns a new matrix i.e matrix/div
+    """
     new_matrix = []
     print_msg = "matrix must be a matrix (list of lists) of integers/floats"
     if type(matrix) is not list or len(matrix) == 0 or len(matrix[0]) == 0:
