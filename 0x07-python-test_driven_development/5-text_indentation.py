@@ -11,9 +11,10 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     for char in text:
-        if ord(char) == ord(".") or ord(char) == ord("?")
-        or ord(char) == ord(":"):
+        if (ord(char) == ord(".") or ord(char) == ord("?") or
+                ord(char) == ord(":")):
             print(char)
             print("")
         else:
             print(char, end="")
+# text_indentation("Hello. You")
