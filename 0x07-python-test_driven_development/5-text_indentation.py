@@ -17,4 +17,3 @@ def text_indentation(text):
             print("")
         else:
             print(char, end="")
-# text_indentation(12)
