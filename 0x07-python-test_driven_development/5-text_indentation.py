@@ -9,11 +9,12 @@ def text_indentation(text):
     Print separated string after '.', '?' and ':'
     """
     if not isinstance(text, str):
-        raise TypeError("taxt must be a string")
+        raise TypeError("text must be a string")
     for char in text:
-        if ord(char) == ord(".") or ord(char) == ord("?") or ord(char) == ord(":"):
+        if ord(char) == ord(".") or ord(char) == ord("?")
+        or ord(char) == ord(":"):
             print(char)
             print("")
         else:
             print(char, end="")
-# text_indentation("Holberton. School? How are you: John")
+# text_indentation(12)
