@@ -15,13 +15,17 @@ def text_indentation(text):
         if (ord(char) == ord(".") or ord(char) == ord("?") or
                 ord(char) == ord(":")):
             ch_char = char
-            print(char)
-            print("")
-        elif ((ord(ch_char) == ord(".") or ord(ch_char) == ord("?") or
-                ord(ch_char) == ord(":")) and ord(char) == ord(" ")):
-            if ord(ch_char) != ord("a"):
-                ch_char = "a"
+            print(char, end="")
+        elif (ord(ch_char) == ord(".") or ord(ch_char) == ord("?") or
+                ord(ch_char) == ord(":")):
+            if ord(char) == ord(" "):
+                if ord(ch_char) != ord("a"):
+                    ch_char = "a"
+                    print(char)
+                    print("")
+            else:
+                print("")
         else:
             ch_char = "a"
             print(char, end="")
-# text_indentation("Holberton. School? Jhon")
+# text_indentation("Holberton. School? How are you: John")
