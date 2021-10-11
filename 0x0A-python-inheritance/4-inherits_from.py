@@ -9,4 +9,4 @@ from the specified class ; otherwise False
 
 def inherit_from(obj, a_class):
     """Check obj for a_class"""
-    return (type(onj) is not a_class and issubclass(obj, a_class))
+    return (type(obj) is not a_class and issubclass(obj, a_class))
