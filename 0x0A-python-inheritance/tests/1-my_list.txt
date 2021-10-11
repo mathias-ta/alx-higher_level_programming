@@ -25,7 +25,7 @@ For ints (program assumes all elements will be type int):
      [100, 50, -7]
      >>> My_list.print_sorted()
      [-7, 50, 100]
-     >>> print(another_list)
+     >>> print(My_list)
      [100, 50, -7]
 
      >>> l = MyList()
