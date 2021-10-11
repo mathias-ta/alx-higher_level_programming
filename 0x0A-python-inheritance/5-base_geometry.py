@@ -4,7 +4,7 @@ Empty class called BaseGeometry
 """
 
 
-class MyList(list):
+class BaseGeometry():
     """
     An empty class
     """
