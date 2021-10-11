@@ -1,0 +1,66 @@
+# run test with python3 -m doctest -v ./tests/[filename].txt
+
+First import method to test
+>>> MyList = __import__('1-my_list').MyList
+
+SUCCESS CASES:
+
+For ints (program assumes all elements will be type int):
+     >>> my_list = MyList()
+     >>> my_list.append(5)
+     >>> my_list.append(50)
+     >>> my_list.append(-1)
+     >>> print(my_list)
+     [5, 50, -1]
+     >>> my_list.print_sorted()
+     [-1, 5, 50]
+     >>> print(my_list)
+     [5, 50, -1]
+
+     >>> My_list = MyList()
+     >>> My_list.append(100)
+     >>> My_list.append(50)
+     >>> My_list.append(-7)
+     >>> print(My_list)
+     [100, 50, -7]
+     >>> My_list.print_sorted()
+     [-7, 50, 100]
+     >>> print(another_list)
+     [100, 50, -7]
+
+     >>> l = MyList()
+     >>> l.append(-300)
+     >>> l.append(50)
+     >>> l.append(-1)
+     >>> print(l)
+     [-300, 50, -1]
+     >>> id(l) is not id(l.print_sorted())
+     [-300, -1, 50]
+     True
+
+For list with one element:
+     >>> My_list = MyList()
+     >>> My_list.append(-89)
+     >>> print(My_list)
+     [-89]
+     >>> My_list.print_sorted()
+     [-89]
+     >>> print(My_list)
+     [-89]
+
+For list with no elements:
+     >>> empty_list = MyList()
+     >>> print(empty_list)
+     []
+     >>> empty_list.print_sorted()
+     []
+
+For type, isinstance, issubclass:
+     >>> type(MyList())
+     <class '1-my_list.MyList'>
+
+     >>> isinstance(MyList, object)
+     True
+
+     >>> isinstance(MyList, list)
+     False
