@@ -5,7 +5,7 @@ contains class called Rectangle that inherits from BaseGeometry
 """
 
 
-class Rectangle:
+class Rectangle(BaseGeometry):
     """Inherits from geometry"""
     def __init__(self, width, height):
         super().integer_validator("width", width)
