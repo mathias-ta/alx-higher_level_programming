@@ -5,10 +5,9 @@ First import method to test
 
 SUCCESS CASES:
 
-For integers greater than 0:
+For integers greater than 0 Returns nothing:
      >>> bg = BaseGeometry()
      >>> bg.integer_validator("num", 999)
-     Returns nothing
 
 FAIL CASES:
 
