@@ -14,4 +14,3 @@ class MyInt(int):
 
     def __ne__(self, obj1):
         return self.__obj == obj1
-
