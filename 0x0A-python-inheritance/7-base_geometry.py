@@ -10,7 +10,9 @@ class BaseGeometry():
     Contains methods area and integer_validator
     """
     def area(self):
+        """area not implemented"""
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
         if not isinstance(value, int):
             raise TypeError("{:s} must be an integer".format(name))
