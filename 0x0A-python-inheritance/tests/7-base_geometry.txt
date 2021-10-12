@@ -1,0 +1,96 @@
+# run test with python3 -m doctest -v ./tests/[filename].txt
+
+First import method to test
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+SUCCESS CASES:
+
+For integers greater than 0:
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", 999)
+     Returns nothing
+
+FAIL CASES:
+
+For non-implemented area method
+     >>> bg = BaseGeometry()
+     >>> bg.area()
+     Traceback (most recent call last):
+     ...
+     Exception: area() is not implemented
+
+For integers less than or equal to 0:
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", 0)
+     Traceback (most recent call last):
+     ...
+     ValueError: num must be greater than 0
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", -7)
+     Traceback (most recent call last):
+     ...
+     ValueError: num must be greater than 0
+
+For non-int type:
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", None)
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", "ALX")
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", "5")
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", [1, 2, 3])
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", (1, 2, 3))
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", {"key": 1})
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", True)
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num", {3, 4})
+     Traceback (most recent call last):
+     ...
+     TypeError: num must be an integer
+
+For invalid number of arguments:
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator()
+     Traceback (most recent call last):
+     ...
+     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("num")
+     Traceback (most recent call last):
+     ...
+     TypeError: integer_validator() missing 1 required positional argument: 'value'
