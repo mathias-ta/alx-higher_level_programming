@@ -8,7 +8,7 @@ def pascal_triangle(n):
     ps_t = [[1]]
     if n <= 0:
         return []
-    elif n == 1:
+    if n == 1:
         return ps_t
     else:
         for i in range(n-1):
