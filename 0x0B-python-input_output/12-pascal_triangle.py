@@ -13,4 +13,4 @@ def pascal_triangle(n):
     else:
         for i in range(n-1):
             ps_t.append([a+b for a, b in zip([0] + ps_t[-1], ps_t[-1] + [0])])
-            return ps_t
+        return ps_t
