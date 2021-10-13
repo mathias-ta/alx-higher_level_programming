@@ -5,7 +5,9 @@ Contains method to create a pascal triangle
 
 
 def pascal_triangle(n):
+    """returns pascal triangle"""
     ps_t = [[1]]
+
     if n <= 0:
         return []
     if n == 1:
