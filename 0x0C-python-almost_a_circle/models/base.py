@@ -4,6 +4,7 @@ Contains class Base which contains
 private class attribute __nb_objects and class constructor __init__
 """
 
+
 class Base():
     """
     contains
@@ -11,6 +12,7 @@ class Base():
     methods __init__(self, id=None)
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """
         Initialize id
