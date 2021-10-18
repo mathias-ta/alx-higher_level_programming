@@ -5,6 +5,9 @@ private class attribute __nb_objects and class constructor __init__
 """
 
 
+import json
+
+
 class Base():
     """
     contains
@@ -22,3 +25,10 @@ class Base():
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """retern json representation of list_dictionaries"""
+        if list_dictionaries is None:
+            list_dictionaries = []
+        return json.dump(list_dictionaries)
