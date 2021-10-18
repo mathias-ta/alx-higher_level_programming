@@ -30,3 +30,27 @@ class Square(Rectangle):
         """sets wisth and height as size"""
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """update values of a squarre"""
+        if args:
+            for i, j in enumerate(args):
+                if i == 0:
+                    self.id = j
+                elif i == 1:
+                    self.size = j
+                elif i = 2:
+                    self.x = j
+                elif i = 3:
+                    self.y = j
+                else:
+                    pass
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "size" in kwargs:
+                self.size = kwargs["size"]
+            if "x" in kwargs["x"]:
+                self.x = kwargs["x"]
+            if "y" in kwargs["y"]:
+                self.y = kwargs["y"]
