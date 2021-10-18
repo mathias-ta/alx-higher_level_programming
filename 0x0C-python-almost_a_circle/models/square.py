@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+contains class Square inherits from Rectangle
+"""
 
 
 from models.rectangle import Rectangle
