@@ -67,7 +67,7 @@ class Base():
         file_name = cls.__name__ + ".json"
         list_inst = []
         try:
-            withh open(file_name, "r") as f:
+            with open(file_name, "r") as f:
                 instances = cls.from_json_string(f.read())
             for i, j in enumerate(instances):
                 list_inst.append(cls.create(**instances[i]))
