@@ -60,3 +60,17 @@ class Base():
             attr = cls(1, 1)
         attr.update(**dictionary)
         return attr
+
+    @classmethod
+    def load_from_file(cls):
+        """returns list of instances"""
+        file_name = cls.__name__ + ".json"
+        list_inst = []
+        try:
+            withh open(file_name, "r") as f:
+                instances = cls.from_json_string(f.read())
+            for i, j in enumerate(instances):
+                list_inst.append(cls.create(**instances[i]))
+        except:
+            pass
+        return list_inst
